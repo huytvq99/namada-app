@@ -1,0 +1,23 @@
+.breadcrumb--link {
+  margin: 0px;
+  font-size: 0.875rem !important;
+  opacity: 1;
+  text-transform: capitalize;
+  vertical-align: unset;
+  text-decoration: none;
+  font-weight: 400 !important;
+  line-height: 0 !important;
+}
+.breadcrumb--title {
+  margin: 0px !important;
+  font-size: 1rem !important;
+  line-height: 1.625 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 1;
+  text-transform: capitalize;
+  vertical-align: unset;
+  text-decoration: none;
+  font-weight: 700 !important;
+}

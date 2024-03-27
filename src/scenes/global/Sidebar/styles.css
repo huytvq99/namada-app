@@ -1,0 +1,113 @@
+.sidebar {
+  box-shadow: rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
+  margin-bottom: inherit;
+  left: 0px;
+  width: 256px;
+  transform: translateX(0px);
+  transition: width 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,
+    background-color 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+  border: none;
+
+  overflow: visible;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1200;
+  position: fixed;
+  top: 0px;
+  outline: 0px;
+  height: calc(-2rem + 100vh);
+  margin: 1rem 0px 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.sidebar.collapsed {
+  width: 5rem;
+  transform: translateX(0px);
+}
+
+.sidebar__menu {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  transform: translate(50%, -10%);
+  z-index: 1300;
+}
+
+.sidebar__header {
+  padding: 24px 24px 8px;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.sidebar__header--logo {
+  width: 2rem;
+  margin-right: 2px;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  cursor: pointer;
+  flex: none;
+  transition: all 0.3s;
+}
+
+.sidebar__header--logo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex: none;
+  border-radius: 50%;
+}
+
+.sidebar__divider {
+  flex-shrink: 0;
+  border-width: 0px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+  height: 0.0625rem;
+  margin: 1rem 0px;
+  border-bottom-style: initial;
+  border-bottom-color: initial;
+  border-left-style: initial;
+  border-left-color: initial;
+  border-right-style: initial;
+  border-right-color: initial;
+  opacity: 0.25;
+  background-image: linear-gradient(
+    to right,
+    rgba(52, 71, 103, 0),
+    rgba(52, 71, 103, 0.4),
+    rgba(52, 71, 103, 0)
+  ) !important;
+}
+
+.sidebar__list {
+}
+
+.sidebar__list--item {
+  text-decoration: none;
+  box-shadow: none;
+  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  background: transparent;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  column-gap: 12px;
+  width: calc(100% - 1rem);
+  padding: 0.675rem 1rem;
+  margin: 0px 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
